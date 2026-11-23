@@ -16,8 +16,12 @@ export function Stop({ name, rank, timestamps }: StopProps) {
     >
       <div className="flex gap-2 items-center">
         <span className="text-sm sm:text-base text-gray-400">{rank}</span>
-        <span className="text-md sm:text-xl text-white font-semibold truncate">{name}</span>
-        <span className="text-sm sm:text-base text-gray-400">({timestamps.length})</span>
+        <span className="text-md sm:text-xl text-white font-semibold truncate">
+          {name}
+        </span>
+        <span className="text-sm sm:text-base text-gray-400">
+          ({timestamps.length})
+        </span>
       </div>
       <Lines lines={stopLines[name as keyof typeof stopLines] ?? []} />
     </div>
