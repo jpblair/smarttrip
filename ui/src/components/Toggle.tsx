@@ -38,7 +38,7 @@ export function Toggle({ options, currentValue, onChange, dark }: ToggleProps) {
             onChange={() => onChange(id)}
             className="sr-only"
           />
-          <label htmlFor={id}>{label}</label>
+          <label className="text-xs sm:text-base" htmlFor={id}>{label}</label>
         </span>
       ))}
     </span>

@@ -17,7 +17,7 @@ export function Lines({ lines }: LinesProps) {
       {lines.map(line => (
         <div
           key={line}
-          className={`w-5 h-5 rounded-[50%] ${lineColorClasses[line as keyof typeof lineColorClasses]}`}
+          className={`w-4 sm:w-5 h-4 sm:h-5 rounded-[50%] ${lineColorClasses[line as keyof typeof lineColorClasses]}`}
         />
       ))}
     </div>

@@ -57,10 +57,10 @@ export default function App() {
   const [isInputModalOpen, setIsInputModalOpen] = useState(false)
   const DisplayComponent = displayComponents[selectedDisplay]
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-3">
       <div className="flex justify-between p-2 h-14 bg-black text-white">
-        <div className="flex items-center gap-2">
-          <p className="font-bold">Select display mode:</p>
+        <div className="flex items-center sm:gap-2">
+          <p className="font-bold text-xs sm:text-base">Select display mode:</p>
           <Toggle
             dark
             options={displayTypes.map(type => ({

@@ -9,5 +9,5 @@ a {
 }
 
 button {
-  @apply bg-blue-600 px-2 py-1.5 rounded-md border-blue-700 border-1 text-white;
+  @apply bg-blue-600 px-2 py-1.5 rounded-md border-blue-700 border-1 text-white text-xs sm:text-base;
 }
