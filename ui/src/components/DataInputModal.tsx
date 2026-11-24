@@ -57,7 +57,7 @@ export function DataInputModal({
           currentValue={importMode}
           onChange={setImportMode}
         />
-        <div className="flex-grow overflow-scroll">
+        <div className="flex-grow overflow-y-auto">
           {importMode === "csv" ? (
             <CSVUploader onChange={setLoadedData} setError={setParseError} />
           ) : (
