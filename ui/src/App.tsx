@@ -23,7 +23,7 @@ const displayComponents: Record<DisplayType, React.FC<DisplayProps>> = {
   [DisplayTypes.MAP]: Map
 }
 
-const displayTypes: DisplayType[] = ["chart", "list", "map"]
+const displayTypes: DisplayType[] = ["list", "map", "chart"]
 const toTitleCase = (str: string) =>
   str[0].toUpperCase() + str.slice(1).toLowerCase()
 
@@ -58,9 +58,9 @@ export default function App() {
   const DisplayComponent = displayComponents[selectedDisplay]
   return (
     <div className="flex flex-col gap-3">
-      <div className="flex justify-between p-2 h-14 bg-black text-white">
-        <div className="flex items-center sm:gap-2">
-          <p className="font-bold text-xs sm:text-base">Select display mode:</p>
+      <div className="flex justify-between p-1 sm:p-2 sm:h-14 bg-black text-white">
+        <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
+          <p className="font-bold text-xs sm:text-base">Display Mode:</p>
           <Toggle
             dark
             options={displayTypes.map(type => ({
@@ -71,10 +71,10 @@ export default function App() {
             onChange={value => setSelectedDisplay(value as DisplayType)}
           />
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-1 sm:gap-2 items-center">
           <button onClick={() => setIsInputModalOpen(true)}>Import Data</button>
           <button onClick={() => setStopData(generateRandomData)}>
-            Generate Random Data
+            Randomize Data
           </button>
         </div>
       </div>

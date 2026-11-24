@@ -10,7 +10,7 @@ export interface StopProps {
 export function Stop({ name, rank, timestamps }: StopProps) {
   return (
     <div
-      className="w-70 sm:w-90 flex justify-between bg-yellow-950 p-2 gap-3 items-center rounded-md"
+      className="w-70 sm:w-90 flex justify-between bg-yellow-950 px-2 p-1 sm:py-2 gap-3 items-center rounded-md"
       data-tooltip-id="stop-list"
       data-visits={timestamps.join()}
     >

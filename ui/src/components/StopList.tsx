@@ -40,7 +40,7 @@ export function StopList({ data }: DisplayProps) {
   })
   return (
     <>
-      <div className="flex flex-col flex-wrap h-[91vh] p-2 gap-2 content-start overflow-x-scroll">
+      <div className="flex flex-col flex-wrap h-[91vh] p-2 gap-1.5 sm:gap-2 content-start overflow-x-scroll">
         {stops.map(([name, timestamps], index) => (
           <Stop
             key={name}
