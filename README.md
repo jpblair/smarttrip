@@ -1,4 +1,4 @@
-React UI and CLI for aggregating and visualizing WMATA usage history, as tracked by the user's registered SmartTrip card. The UI is deployed at https://jpblair.github.io/smarttrip. This repository includes:
+React UI and Node CLI for aggregating and visualizing WMATA usage history, as tracked by the user's registered SmartTrip card. The UI is deployed at https://jpblair.github.io/smarttrip. This repository includes:
 - Browser console script to download multiple months of usage history data from the WMATA SmartTrip website.
 - Node.js CLI to aggregate and parse the downloaded CSV files from WMATA into a ranked list of most used rail stops and bus lines.
 - React UI to visualize the aggregated data, either directly using the downloaded CSV files, or the output of the Node.js script. The data can be visualized as:
